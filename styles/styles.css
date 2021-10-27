@@ -1,0 +1,68 @@
+:root {
+	--bg-color: #f5e8c7;
+	--text-color: #6f4c5b;
+	--header-color: rgb(240, 176, 120);
+	--atsargai: #9e7777;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	background-color: var(--atsargai);
+}
+
+p {
+	font-weight: 400;
+	font-size: 20px;
+	font-family: "Indie Flower", cursive;
+	padding: 10px 0 25px;
+}
+header {
+	position: relative;
+}
+
+.links {
+	background-color: var(--header-color);
+	text-align: center;
+	padding: 15px;
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+
+.antrastenehome {
+	font-size: 50px;
+}
+
+a {
+	color: var(--bg-color);
+	font-weight: 600;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-decoration: none;
+	padding-left: 60px;
+}
+
+h1 {
+	top: 324px;
+	left: 90px;
+	position: absolute;
+	font-family: "Yellowtail", cursive;
+	font-size: 100px;
+	color: rgb(214, 149, 91);
+}
+
+main {
+	width: 70%;
+	margin: 0 auto;
+	background-color: var(--bg-color);
+	-webkit-box-shadow: -7px 12px 33px 2px rgba(0, 0, 0, 0.62);
+	box-shadow: -7px 12px 33px 2px rgba(0, 0, 0, 0.62);
+}
+
+section {
+	color: var(--text-color);
+	font-weight: 600;
+	font-family: "Yellowtail", cursive;
+	font-size: 70px;
+	text-align: center;
+}
