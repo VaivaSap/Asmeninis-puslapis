@@ -13,16 +13,16 @@ function loadAllUnits() {
         /* data object contains all received information.
         *  The data object has the following structure: 
         *  {
-        *			includes: Has data about attached content.
-        *				Asset: It is an array of attached images. Image URL can be found by exploring the objects inside the array
-        *			items: It is an array of individual posts (units). Each item has the following structure.
-        *				fields: Object containing different fields created in contentful UI (like title, content and etc.)
-        *				metadata: Object that contains a list of tags
-        *				sys: Object containing additional data about the post (unit). Like id, creation date, type and etc.
-        *			limit: A number of posts received in this response. Can be used for pagination.
-        *			skip: A numbber of posts skipped before getting this list of posts. Can be used for pagination.
-        *			total: A total numeber of posts available. Can be used for pagination.
-        *			sys: Object containing information about received data (for now only data type).
+        *  includes: Has data about attached content.
+        *    Asset: It is an array of attached images. Image URL can be found by exploring the objects inside the array
+        *  items: It is an array of individual posts (units). Each item has the following structure.
+        *    fields: Object containing different fields created in contentful UI (like title, content and etc.)
+        *    metadata: Object that contains a list of tags
+        *    sys: Object containing additional data about the post (unit). Like id, creation date, type and etc.
+        *  limit: A number of posts received in this response. Can be used for pagination.
+        *  skip: A numbber of posts skipped before getting this list of posts. Can be used for pagination.
+        *  total: A total numeber of posts available. Can be used for pagination.
+        *  sys: Object containing information about received data (for now only data type).
         *	 }
         * You can always explore the structure of that data by uncommenting console.log below.
         */ 
