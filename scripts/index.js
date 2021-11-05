@@ -37,6 +37,24 @@ function loadAllUnits() {
           const contentContainer = document.createElement('secion')
           contentContainer.classList.add('unit')
 
+          // Check if unit has images attached
+          if (item.fields.media && item.fields.media.sys) {
+            // Infromation about image is stored in different place (as same image can be attached to different units)
+            // Only the ids stored in unit so we need to find the image information using this id
+            const imageData = data.includes.Asset.find(asset => asset.sys.id === item.fields.media.sys.id)
+
+            if (imageData) {
+              // If image information exists, create img element, add a class and set attributes
+              const imageNode = document.createElement('img')
+              imageNode.classList.add('unit-image')
+              imageNode.src = imageData.fields.file.url
+              imageNode.alt = imageData.fields.title
+
+              // Append image tag to the container
+              contentContainer.appendChild(imageNode)
+            }
+          }
+
           // Create title element. It will be <h2> element and have a class 'unit-title'.
           const titleNode = document.createElement('h2')
           titleNode.classList.add('unit-title')
